@@ -7,3 +7,5 @@ function clearTable(table) {
         tableСell[i].innerText = '';
     }
 }
+
+btnClear.addEventListener('click', () =>  { clearTable(mainTable); });
