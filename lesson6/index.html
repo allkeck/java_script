@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="calculator-container">
+    <div class="backspace" onclick="backSpace();" keyup="function(){console.log('loh');}">&larr;</div>
+    <form name="form"><input type="text" name="screen" class="screen" readonly></form>
+    <div class="calculator-keyboard">
+      <button type="button" class="symbol-btn" onclick="insert('7');">7</button>
+      <button type="button" class="symbol-btn" onclick="insert('8');">8</button>
+      <button type="button" class="symbol-btn" onclick="insert('9');">9</button>
+      <button type="button" class="symbol-btn" onclick="insertOp('+');">+</button>
+      <button type="button" class="symbol-btn" onclick="insert('4');">4</button>
+      <button type="button" class="symbol-btn" onclick="insert('5');">5</button>
+      <button type="button" class="symbol-btn" onclick="insert('6');">6</button>
+      <button type="button" class="symbol-btn" onclick="insertOp('-');">-</button>
+      <button type="button" class="symbol-btn" onclick="insert('1');">1</button>
+      <button type="button" class="symbol-btn" onclick="insert('2');">2</button>
+      <button type="button" class="symbol-btn" onclick="insert('3');">3</button>
+      <button type="button" class="symbol-btn" onclick="insertOp('*');">*</button>
+      <button type="button" class="symbol-btn" onclick="clean();">C</button>
+      <button type="button" class="symbol-btn" onclick="insert('0');">0</button>
+      <button type="button" class="symbol-btn" onclick="myEval();">=</button>
+      <button type="button" class="symbol-btn" onclick="insertOp('/');">/</button>
+    </div>
+  </div>
+</body>
+
+</html>
